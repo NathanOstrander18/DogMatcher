@@ -1,106 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
-
-  <h3>What is your experience with dogs?</h3>
-  <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">New to dogs</label>
+    <div class="q1">
+        <h3>What is your experience with dogs?</h3>
     </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Currectly own a dog</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Owned a dog in the past</label>
-
-      <h3>What is your home like?</h3>
-    <div class="radio">
-  <form>
-      <label><input type="radio" name="optradio">An apartment</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">A house with a small yard</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>A house with a large yard</label>
-    </div>
-  </form>
-   <h3>How big is your yard?</h3>
-    <div class="radio">
     <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">None—but my NEXT house will have a yard</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Small</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Medium (mowing doesn't take all day)</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Large enough to help me forget I've got neighbors</label>
-    </div>
-  </form>
+        <div class="radio q1-selector q3-selector">
 
-     <h3>Where is your home?</h3>
-    <div class="radio">
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="new" name="1question">
+                    <label class="q1-e dm1" for="new">New to dogs</label>
+                </div>
+                <div class="radio qe q1a2">
+                    <input type="radio" id="current" name="1question">
+                    <label class="q1-e dm1" for="current">Currently own a dog</label>
+                </div>
+                <div class="radio qe q1a3">
+                    <input type="radio" id="past" name="1question">
+                    <label class="q1-e dm1" for="past">Owned a dog in the past</label>
+                </div>
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>What is your home like?</h3>
+    </div>
     <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Downtown</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio"> Suburb or small town </label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Rural retreat</label>
-    </div>
-  </form>
+        <div class="radio q1-selector q3-selector">
 
-      <h3>Are you able to keep a dog secure?</h3>
-    <div class="radio">
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="apartment" name="2question">
+                    <label class="q1-e dm2" for="apartment">An apartment</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="small" name="2question">
+                    <label class="q1-e dm2" for="small">A house with a small yard</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="large" name="2question">
+                    <label class="q1-e dm2" for="large">A house with a large yard</label>
+                </div>
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>How big is your yard?</h3>
+    </div>
     <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Yes</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">No </label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>Usually</label>
-    </div>
-  </form>
+        <div class="radio q1-selector">
 
-   <h3>For how long would your dog be alone each week?</h3>
-    <div class="radio">
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="nexthouse" name="3question">
+                    <label class="q1-e dm3" for="nexthouse">None—but my NEXT house will have a yard</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="smallyard" name="3question">
+                    <label class="q1-e dm3" for="smallyard">Small</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="mediumyard" name="3question">
+                    <label class="q1-e dm3" for="mediumyard">Medium (mowing doesn't take all day)</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="largeyard" name="3question">
+                    <label class="q1-e dm3" for="largeyard">Large enough to help me forget I've got neighbors</label>
+                </div>
+
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Where is your home?</h3>
+    </div>
     <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Not at all</label>
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">10–20 hours </label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>20–40 hours</label>
-    </div>
-    <div class="radio disabled">
-      <label><input type="radio" name="optradio" disabled>More than 40 hours</label>
-    </div>
-  </form>
+        <div class="radio q1-selector q3-selector">
 
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="downtown" name="4question">
+                    <label class="q1-e dm4" for="downtown">Downtown</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="suburb" name="4question">
+                    <label class="q1-e dm4" for="suburb">Suburb or small town </label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="rural" name="4question">
+                    <label class="q1-e dm4" for="rural">Rural retreat</label>
+                </div>
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Are you able to keep a dog secure?</h3>
+    </div>
+    <form>
+        <div class="radio q1-selector q3-selector">
+
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="secure" name="5question">
+                    <label class="q1-e dm5" for="secure">Yes</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="notsecure" name="5question">
+                    <label class="q1-e dm5" for="notsecure">No </label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="usually" name="5question">
+                    <label class="q1-e dm5" for="usually">Usually</label>
+                </div>
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>For how long would your dog be alone each week?</h3>
+    </div>
+    <form>
+        <div class="radio q1-selector">
+
+                <div class="radio qe q1a1 first">
+                    <input type="radio" id="notatall" name="6question">
+                    <label class="q1-e dm6" for="notatall">Not at all</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="10hours" name="6question">
+                    <label class="q1-e dm6" for="10hours">10–20 hours </label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="20hours" name="6question">
+                    <label class="q1-e dm6" for="20hours">20–40 hours</label>
+                </div>
+                <div class="radio qe q1a1">
+                    <input type="radio" id="40hours" name="6question">
+                    <label class="q1-e dm6" for="40hours">More than 40 hours</label>
+                </div>
+
+        </div>
+    </form>
+    <br>
+
+    <div class="submit">
+        <input type="submit" name="submit" class="subbut" value="Submit">
+    </div>
+    <br>
 </div>
 
 </body>
 </html>
-
-
-
