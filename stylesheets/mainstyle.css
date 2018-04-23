@@ -1,0 +1,209 @@
+
+body {
+    background-color: antiquewhite;
+}
+
+input[type="radio"] {
+    -webkit-appearance: none; /* Chrome, Safari, Opera */
+    -moz-appearance: none;    /* Firefox */
+    -ms-appearance: none;     /* not currently supported */
+}
+.container{
+    text-align: center;
+    background-color: antiquewhite;
+}
+.q1{
+    margin-top: 75px;
+    background: linear-gradient(to bottom right, burlywood, brown);
+    height:180px;
+    vertical-align: center;
+    display: table;
+    height: 100px;
+    width: 890px;
+    text-align: center;
+
+}
+.q1 h3 {
+
+
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    display: table-cell;
+    color: aliceblue;
+
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+h3 {
+    font-size: xx-large;
+}
+label {
+    color: aliceblue;
+    position: relative;
+    padding-top: 70px;
+    font-size: large;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 15px;
+    text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+}
+
+.q1-selector{
+    vertical-align: center;
+    height:230px;
+    text-align: center;
+    width:900px;
+    display: flex;
+}
+.q3-selector{
+    vertical-align: center;
+    height:230px;
+    text-align: center;
+    width:900px;
+    left:12%;
+    display: flex;
+}
+
+
+.inside{ background-image:url("images/Bed.jpg");}
+.outside{ background-image:url("images/soccerball.jpg");}
+.social{ background-image:url("images/social.jpg");}
+.work{ background-image:url("images/work.jpg");}
+
+.beach{background-image:url("images/beach.jpg");}
+.cold{background-image:url("images/cold.jpg");}
+.farm{background-image:url("images/farm.jpg");}
+.city{background-image:url("images/city.jpg");}
+
+.attack{background-image:url("images/attack.jpg");}
+.tire{background-image:url("images/tire.jpg");}
+.yell{background-image:url("images/yell.jpg");}
+.smart{background-image:url("images/smart.jpg");}
+.run{background-image:url("images/run.jpg");}
+
+.bar{background-image:url("images/bar.jpg");}
+.few{background-image:url("images/few.png");}
+.netflix{background-image:url("images/netflix.png");}
+.prod{background-image:url("images/prod.jpg");}
+
+.muscle{background-image:url("images/muscle.jpg");}
+.tone{background-image:url("images/tone.jpg");}
+.short{background-image:url("images/short.png");}
+.avg{background-image:url("images/avg.jpg");}
+.fat{background-image:url("images/fat.jpg");}
+
+.egypt{background-image:url("images/egypt.jpg");}
+.bahamas{background-image:url("images/bahamas.jpg");}
+.ice{background-image:url("images/ice.jpg");}
+.eu{background-image:url("images/eu.jpg");}
+.tokyo{background-image:url("images/tokyo.jpg");}
+
+.drop{background-image:url("images/bw.jpg");}
+.ask{background-image:url("images/bw.jpg");}
+.find{background-image:url("images/bw.jpg");}
+.excuse{background-image:url("images/bw.jpg");}
+
+.dm1{
+    background: linear-gradient(to bottom right, red, black);
+    height:200px;
+    width:200px;
+}
+.dm2{
+    background: linear-gradient(to bottom right, purple, black);
+    height:200px;
+    width:200px;
+}
+.dm3{
+    background: linear-gradient(to bottom right, green, black);
+    height:200px;
+    width:200px;
+}
+.dm4{
+    background: linear-gradient(to bottom right, blue, black);
+    height:200px;
+    width:200px;
+}
+.dm5{
+    background: linear-gradient(to bottom right, orange, black);
+    height:200px;
+    width:200px;
+}
+.dm6{
+    background: linear-gradient(to bottom right, yellow, black);
+    height:200px;
+    width:200px;
+}
+
+.food{background-image:url("images/food.jpg");}
+.xmas{background-image:url("images/xmas.jpg");}
+.fourth{background-image:url("images/fourth.jpg");}
+.april{background-image:url("images/april.jpg");}
+.none{background-image:url("images/bw.jpg");}
+
+.pizza{background-image:url("images/pizza.png");}
+.salad{background-image:url("images/salad.jpg");}
+.seafood{background-image:url("images/seafood.jpg");}
+.candy{background-image:url("images/candy.jpg");}
+.steak{background-image:url("images/steak.jpg");}
+
+.q1-selector input:active +.q1-e{opacity: .9;}
+.q1-selector input:checked +.q1-e{
+    -webkit-filter: none;
+    -moz-filter: none;
+    filter: none;
+    border: 10px solid mediumpurple;
+}
+.first{
+    margin-top: -5px !important;
+}
+.submit{
+    text-align: center;
+}
+.subbut{
+    background: linear-gradient(to bottom right, burlywood, brown);
+    color: white;
+    width: 170px;
+    height: 60px;
+    font-size: xx-large;
+}
+.subbut2{
+    background: linear-gradient(to bottom right, burlywood, brown);
+    color: white;
+    width: 800px;
+    height: 60px;
+    text-align: center;
+
+    font-size: xx-large;
+}
+.q1-e{
+    cursor:pointer;
+    display: inline-block;
+    display:block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+
+
+    background-repeat:no-repeat;
+    border-radius: 5%;
+    width:200px;height:200px;
+
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+
+}
+.q1-e:hover{
+
+    border: 8px solid mediumpurple;
+
+}

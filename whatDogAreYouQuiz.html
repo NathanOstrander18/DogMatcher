@@ -1,182 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <div class="container">
+    <div class="q1">
+        <h3>What does your ideal day look like?</h3>
+    </div>
+        <form>
+            <div class="q1-selector">
+                <div class="radio qe q1a1 first">
+                    <input id="inside" type="radio" name="question1" value="inside">  <!--Beagle-->
+                    <label class="q1-e inside" for="inside">Staying inside and relaxing.</label>
+                </div>
 
-  <h3>What does your ideal day look like?</h3>
-  <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Staying inside and relaxing.</label>  <!--Beagle-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Going outside and being active/ playing a sport.</label> <!-- Collie, Husky-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Socializing with others.</label> <!--Retriever, Corgi-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Being productive and getting a lot of work done.</label> <!--German Shepard-->
-    </div>
-  </form>
+                <div class="radio qe q1a2">
+                    <input id="outside" type="radio" name="question1" value="outside"> <!-- Collie, Husky-->
+                    <label class="q1-e outside" for="outside">Going outside and being active/ playing a sport.</label>
+                </div>
 
-      <h3>If you could have a house anywhere, where would you pick?</h3>
+                <div class="radio qe q1a3">
+                    <input id="social" type="radio" name="question1" value="social"> <!--Retriever, Corgi-->
+                    <label class="q1-e social" for="social">Socializing with others.</label>
+                </div>
+
+                <div class="radio qe q1a4">
+                    <input id="work" type="radio" name="question1" value="work"> <!--German Shepard-->
+                    <label class="q1-e work" for="work">Being productive and getting a lot of work done.</label>
+                </div>
+            </div>
+        </form>
+
+    <div class="q1">
+        <h3>If you could have a house anywhere, where would you pick?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">On the beach where it is warm every day.</label> <!--Corgi-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Somewhere cold with mountains and snow.</label> <!--Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">On a farm surrounded by lots of different animals!</label> <!--Collie, German SHepard-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">A busy city with lots of new people to meet.</label> <!--Retriever, Beagle-->
-      </div>
-   </form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="beach" type="radio" name="question2" value="beach">  <!--Corgi-->
+                <label class="q1-e beach" for="beach">On the beach where it is warm every day.</label>
+            </div>
 
-  <h3>Oh no! You have found yourself in an altercation. What do you do?</h3>
-  <form>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Attack the enemy because you are stronger.</label> <!--German Shepard, Husky-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Tire out the enemy with your vast amount of energy.</label> <!--Collie-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Yell for help.</label><!--Beagle-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Outsmart your enemy.</label><!--Retriever-->
-    </div>
-    <div class="radio">
-      <label><input type="radio" name="optradio">Run and hide.</label><!--Corgi-->
-    </div>
-  </form>
+            <div class="radio qe q1a2">
+                <input id="cold" type="radio" name="question2" value="cold"> <!--  Husky-->
+                <label class="q1-e cold" for="cold">Somewhere cold with mountains and snow.</label>
+            </div>
 
+            <div class="radio qe q1a3">
+                <input id="farm" type="radio" name="question2" value="farm"> <!--Shepard, Collie-->
+                <label class="q1-e farm" for="farm">On a farm surrounded by lots of different animals!</label>
+            </div>
 
-         <h3>What are your favorite Friday night plans?</h3>
+            <div class="radio qe q1a4">
+                <input id="city" type="radio" name="question2" value="city"> <!--Retriever, Beagle-->
+                <label class="q1-e city" for="city">A busy city with lots of new people to meet.</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Oh no! You have found yourself in an altercation. What do you do?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Going out to a bar and drinking.</label><!--Retriever, Corgi-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Hanging out with a few close friends.</label><!--Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Staying in and binging a Netflix show.</label><!--Beagle-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Working on something productive that you enjoy.</label><!--German Shepard, Collie-->
-      </div>
-   </form>
-    
-             <h3>What is your body type?</h3>
-    <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Muscular</label><!--German Shepard, Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Very toned and fit</label><!--Collie-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Pretty short</label><!-- Corgi-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Average</label><!--Retriever-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">I haven't hit the gym in a while...</label><!--Beagle-->
-      </div>
-   </form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="attack" type="radio" name="question3" value="attack">  <!--German Shepard, Husky-->
+                <label class="q1-e attack" for="attack">Attack the enemy because you are stronger.</label>
+            </div>
 
+            <div class="radio qe q1a2">
+                <input id="tire" type="radio" name="question3" value="tire"> <!--  Collie-->
+                <label class="q1-e tire" for="tire">Tire out the enemy with your vast amount of energy.</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="smart" type="radio" name="question3" value="smart"> <!--Retriever-->
+                <label class="q1-e smart" for="smart">Outsmart your enemy.</label>
+            </div>
+
+            <div class="radio qe q1a5">
+                <input id="run" type="radio" name="question3" value="run"> <!--Corgi-->
+                <label class="q1-e run" for="run">Run and hide.</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>What are your favorite Friday night plans?</h3>
+    </div>
+    <form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="bar" type="radio" name="question4" value="bar">  <!--Retriever, Corgi-->
+                <label class="q1-e bar" for="bar">Going out to a bar and drinking with a bunch of people.</label>
+            </div>
+
+            <div class="radio qe q1a2">
+                <input id="few" type="radio" name="question4" value="few"> <!--  Husky-->
+                <label class="q1-e few" for="few">Hanging out with a few close friends.</label>
+            </div>
+
+            <div class="radio qe q1a3">
+                <input id="netflix" type="radio" name="question4" value="netflix"> <!--Beagle-->
+                <label class="q1-e netflix" for="netflix">Staying in and binging a Netflix show.</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="prod" type="radio" name="question4" value="prod"> <!--Shepard, Collie-->
+                <label class="q1-e prod" for="prod">Working on something productive that you enjoy.</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>What is your body type?</h3>
+    </div>
+    <form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="muscle" type="radio" name="question5" value="muscle">  <!--German Shepard, Collie-->
+                <label class="q1-e muscle" for="muscle">All muscle.</label>
+            </div>
+
+            <div class="radio qe q1a3">
+                <input id="short" type="radio" name="question5" value="short"> <!--Corgi-->
+                <label class="q1-e short" for="short">Pretty short.</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="avg" type="radio" name="question5" value="avg"> <!--Husky, Retriever-->
+                <label class="q1-e avg" for="avg">Average.</label>
+            </div>
+
+            <div class="radio qe q1a5">
+                <input id="fat" type="radio" name="question5" value="fat"> <!--Beagle-->
+                <label class="q1-e fat" for="fat">I haven't hit the gym in a while...</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
         <h3>If you could travel anywhere, where would you pick?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Egypt to see the pyramids.</label><!--Beagle, Collie-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">The Bahamas. I love warm weather and the beach!</label><!--German SHepard-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Somewhere with mountains and icebergs.</label><!--Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Backpacking Europe.</label><!--Retriever-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Tokyo, Japan for the culture.</label><!--Corgi-->
-      </div>
-   </form>
+        <div class="q1-selector">
 
-   <h3>Your best friend needs your help, what do you do?</h3>
+            <div class="radio qe q1a2 first">
+                <input id="bahamas" type="radio" name="question6" value="bahamas"> <!--  German Shepard, Beagle-->
+                <label class="q1-e bahamas" for="bahamas">The Bahamas. I love warm weather and the beach!</label>
+            </div>
+
+            <div class="radio qe q1a3">
+                <input id="ice" type="radio" name="question6" value="ice"> <!--Husky-->
+                <label class="q1-e ice" for="ice">Somewhere with mountains and icebergs.</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="eu" type="radio" name="question6" value="eu"> <!--Retriever, Collie-->
+                <label class="q1-e eu" for="eu">Backpacking Europe.</label>
+            </div>
+
+            <div class="radio qe q1a5">
+                <input id="tokyo" type="radio" name="question6" value="tokyo"> <!--Corgi-->
+                <label class="q1-e tokyo" for="tokyo">Tokyo, Japan for the culture.</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Your best friend needs your help, what do you do?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Immediately drop what I am doing to seek them out and help them.</label><!--Husky, German SHepard-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Ask them for more information to make a rationale decision.</label><!--Retriever, Collie-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Try to find someone else to help them.</label><!--Corgi-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Make up some excuse as to why you are too busy to help.</label><!--Beagle-->
-      </div>
-   </form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="drop" type="radio" name="question7" value="drop">  <!--Husky, German Shepard-->
+                <label class="q1-e drop" for="drop">Immediately drop what I am doing to seek them out and help them.</label>
+            </div>
 
-      <h3>Favorite holiday?</h3>
+            <div class="radio qe q1a2">
+                <input id="ask" type="radio" name="question7" value="ask"> <!-- Retriever, Collie-->
+                <label class="q1-e ask" for="ask">Ask them for more information to make a rationale decision.</label>
+            </div>
+
+            <div class="radio qe q1a3">
+                <input id="find" type="radio" name="question7" value="find"> <!--Corgi-->
+                <label class="q1-e find" for="find">Try to find someone else to help them.</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="excuse" type="radio" name="question7" value="excuse"> <!--Beagle-->
+                <label class="q1-e excuse" for="excuse">Make up some excuse as to why you are too busy to help.</label>
+            </div>
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Favorite holiday?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Thanksgiving. Food!</label><!--Beagle-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Christmas. The snow and weather is great.</label><!--Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Fourth of July. I love my country!</label><!--Retriever, German Shepard-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">April Fools Day. I am great at pranks.</label><!--Corgi, Collie-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">I do not celebrate/ like any of these holidays.</label>
-      </div>
-   </form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="food" type="radio" name="question8" value="food">  <!--Beagle-->
+                <label class="q1-e food" for="food">Thanksgiving. Food!</label>
+            </div>
 
-         <h3>Favorite food?</h3>
+            <div class="radio qe q1a2">
+                <input id="xmas" type="radio" name="question8" value="xmas"> <!--  Husky-->
+                <label class="q1-e xmas" for="xmas">Christmas. The snow and weather is great.</label>
+            </div>
+
+
+
+            <div class="radio qe q1a3">
+                <input id="fourth" type="radio" name="question8" value="fourth"> <!--Retriever, German Shepard-->
+                <label class="q1-e fourth" for="fourth">Fourth of July. I love my country!</label>
+            </div>
+
+            <div class="radio qe q1a4">
+                <input id="april" type="radio" name="question8" value="april"> <!--Corgi, Collie-->
+                <label class="q1-e april" for="april">April Fools Day. I am great at pranks.</label>
+            </div>
+
+        </div>
+    </form>
+
+    <div class="q1">
+        <h3>Favorite food?</h3>
+    </div>
     <form>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Pizza!</label><!--Beagle-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Salad.</label><!--Collie-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Seafood.</label><!--Corgi, Husky-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Chocolate and Candy.</label><!--German Shepard-->
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optradio">Steak.</label><!--Retriever-->
-      </div>
-   </form>
+        <div class="q1-selector">
+            <div class="radio qe q1a1 first">
+                <input id="pizza" type="radio" name="question9" value="pizza">  <!--Beagle-->
+                <label class="q1-e pizza" for="pizza">Pizza!</label>
+            </div>
 
+            <div class="radio qe q1a2">
+                <input id="salad" type="radio" name="question9" value="salad"> <!--  Collie, german shepard-->
+                <label class="q1-e salad" for="salad">Salad.</label>
+            </div>
+
+            <div class="radio qe q1a3">
+                <input id="seafood" type="radio" name="question9" value="seafood"> <!--Corgi, Husky-->
+                <label class="q1-e seafood" for="seafood">Seafood.</label>
+            </div>
+
+            <div class="radio qe q1a5">
+                <input id="steak" type="radio" name="question9" value="steak"> <!--Husky-->
+                <label class="q1-e steak" for="steak">Steak.</label>
+            </div>
+        </div>
+    </form>
 
 </div>
+<div class="submit">
+    <input type="submit" name="submit" class="subbut" value="Submit">
+</div>
+<br>
 
 </body>
 </html>
-
-
-
