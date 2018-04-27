@@ -28,9 +28,9 @@
             $this->answer4 = $answer4;
             $this->answer5 = $answer5;
             $this->answer6 = $answer6;
-            $this->answer4 = $answer7;
-            $this->answer5 = $answer8;
-            $this->answer6 = $answer6;
+            $this->answer7 = $answer7;
+            $this->answer8 = $answer8;
+            $this->answer9 = $answer9;
         }
 
         public function save() {
@@ -46,7 +46,7 @@
             }
 
             /* Query */
-            $sqlQuery = sprintf("insert into dogmatcher.whatDogResults (userId, dog, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
+            $sqlQuery = sprintf("insert into dogmatcher.whatDogResults (userId, dog, answer1, answer2, answer3, answer4, answer5, answer6, answer7, answer8, answer9) values ('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s')",
                 $this->userId, $this->dog, $this->answer1, $this->answer2, $this->answer3, $this->answer4, $this->answer5, $this->answer6, $this->answer7, $this->answer8, $this->answer9);
 
             /* Executing query */

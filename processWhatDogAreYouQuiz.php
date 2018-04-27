@@ -2,7 +2,7 @@
 require("WhatDogResults.php");
 
 //grab user from session after login
-$userId = 1;
+$userId = 2;
 
 //add logic for dog selection
 $dog = "Doggo";
