@@ -107,7 +107,28 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
   echo '
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+
+    <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 
 <h2>You Should Get A Pembroke Welsh Corgi</h2>
 <img src="images/corgi.jpg"/> <br></br>
@@ -121,8 +142,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
   echo '
 <!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A Beagle</h2>
 <img src="images/beagle.jpg" alt="Beagle"><br></br>
 <p> Small, compact, and hardy, Beagles are active companions for kids and adults alike. Canines in this dog breed are merry and fun loving, but being hounds, they can also be stubborn and require patient, creative training techniques. Their noses guide them through life, and they’re never happier than when following an interesting scent. The Beagle originally was bred as a scenthound to track small game, mostly rabbits and hare. He is still used for this purpose in many countries, including the United States.       </p>
@@ -135,8 +175,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
   echo '
 <!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A German Shepherd</h2>
 <img src="images/ger_shep.jpg" alt="German Shepherd"><br></br>
 <p> The German Shepherd Dog is one of America’s most popular dog breeds — for good reason. He’s an intelligent and capable working dog. His devotion and courage are unmatched. And he’s amazingly versatile, excelling at most anything he’s trained to do: guide and assistance work for the handicapped, police and military service, herding, search and rescue, drug detection, competitive obedience and, last but not least, faithful companion.  </p>
@@ -148,8 +207,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 }else if($husky >= $corgi && $husky >= $beagle && $husky >= $german_shep  && $husky >= $retriever && $husky >= $collie){
   echo '<!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A Siberian Husky</h2>
 <img src="images/husky.jpg" alt="Husky"><br></br>
 <p> The Siberian Husky is a beautiful dog breed with a thick coat that comes in a multitude of colors and markings. Their blue or multi-colored eyes and striking facial masks only add to the appeal of this breed, which originated in Siberia. It is easy to see why many are drawn to the Siberian’s wolf-like looks, but be aware that this athletic, intelligent dog can be independent and challenging for first-time dog owners.  </p>
@@ -162,8 +240,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 
   echo '<!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A Golden Retriever</h2>
 <img src="images/retriever.jpg" alt="Retriever"><br></br>
 <p> The Golden Retriever is one of the most popular dog breeds in the U.S. The breed’s friendly, tolerant attitude makes him a fabulous family pet, and his intelligence makes him a highly capable working dog. Golden Retrievers excel at retrieving game for hunters, tracking, sniffing out drugs, and as therapy and assistance dogs. They’re also natural athletes, and do well in dog sports such as agility and competitive obedience.</p>
@@ -176,8 +273,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 
   echo '<!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A Collie</h2>
 <img src="images/collie.jpg" alt="Collie"><br></br>
 <p> The Collie dog breed is a native of Scotland, mostly of the Highland regions but also bred in the Scottish Lowlands and northern England, where she was used primarily as a herding dog. She is a sensitive and intelligent dog, known for her undying loyalty and amazing ability to foresee her owner’s needs. She is a great family companion, and is still a capable herding dog.</p>
@@ -189,8 +305,27 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 }else{
   echo '<!DOCTYPE html>
 <html>
-<body>
-
+<head>
+    <meta charset="utf-8" />
+    <!-- For responsive page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Basic HTML5 Document" />
+    <meta name="keywords" content="HTML5, Responsive"/>
+    <title>Second page</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/frontStyle.css">
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: antiquewhite;">
+ <ul>
+        <li><a class="active" href="quizPortal.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="data.php">View quiz data</a></li>
+    </ul>
 <h2>You Should Get A Collie</h2>
 <img src="images/collie.jpg" alt="Collie"><br></br>
 <p> The Collie dog breed is a native of Scotland, mostly of the Highland regions but also bred in the Scottish Lowlands and northern England, where she was used primarily as a herding dog. She is a sensitive and intelligent dog, known for her undying loyalty and amazing ability to foresee her owner’s needs. She is a great family companion, and is still a capable herding dog.</p>
