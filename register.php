@@ -43,6 +43,7 @@
 			<input type="password" name="password" id = "password"  required>
 			<br>
 			<input type="submit" />
+			<p>Password must be between 3-18 characters and contain at least 1 Capital letter and at least 1 number!</p>
 		</div>
 		</form>
     </body>
