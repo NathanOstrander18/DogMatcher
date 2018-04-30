@@ -8,6 +8,7 @@
         <meta name="keywords" content="HTML5, Responsive"/>
         <title>Login page</title> 
 		
+		<script type="text/javascript" src="pwFormat.js"></script>
 		<link rel="stylesheet" href="mainstyle.css">
 
     </head>
@@ -34,12 +35,12 @@
 			
 			<div class="form-group">
 			<strong>Username: </strong>
-			<input type="text" name="username" >
+			<input type="text" name="username" required>
 			
 			<br>
 			
 			<strong>Password: </strong>
-			<input type="password" name="password" >
+			<input type="password" name="password" id = "password"  required>
 			<br>
 			<input type="submit" />
 		</div>
