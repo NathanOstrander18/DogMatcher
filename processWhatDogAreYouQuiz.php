@@ -189,6 +189,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 
@@ -223,6 +224,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a Beagle</h2>
@@ -256,6 +258,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a German Shepherd</h2>
@@ -288,6 +291,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a Siberian Husky</h2>
@@ -320,7 +324,8 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a class="active" href="quizPortal.html">Home</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
-        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a>
+        </li><li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a Golden Retriever</h2>
@@ -353,7 +358,8 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a class="active" href="quizPortal.html">Home</a></li>
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
-        <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="dogMatchQuiz.html">What dog is best for you?</a>
+        </li><li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a Collie</h2>
@@ -386,6 +392,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You are a Collie</h2>
@@ -400,8 +407,14 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 //check if user already has taken the quiz. If so, change the user quiz answers/dog and call $quiz->update()
 
 //If the user has not taken the quiz save the new quiz results
-$quiz = new WhatDogResults($userId, $dog, $_POST['question1'], $_POST['question2'], $_POST['question3'], $_POST['question4'], $_POST['question5'], $_POST['question6'], $_POST['question7'], $_POST['question8'], $_POST['question9']);
-$quiz->save();
+$quiz = new WhatDogResults($userId, $dog, $_POST['question1'], $_POST['question2'], $_POST['question3'], $_POST['question4'], $_POST['question5'],
+ $_POST['question6'], $_POST['question7'], $_POST['question8'], $_POST['question9']);
+
+if($quiz->inDB()) {
+    $quiz->update();
+} else {
+    $quiz->save();
+}
 
 
 

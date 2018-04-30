@@ -28,9 +28,7 @@
             $db_connection = new mysqli($host, $user, $password, $database);
             if ($db_connection->connect_error) {
                 die($db_connection->connect_error);
-            } else {
-                echo "Connection to database established<br><br>";
-            }
+            } 
 
             /* Query */
             $sqlQuery = sprintf("insert into dogmatcher.user (name, email, gpa, year, gender, password) values ('%s', '%s', '%s', '%s')",

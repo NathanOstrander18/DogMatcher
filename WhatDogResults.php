@@ -41,8 +41,6 @@
             $db_connection = new mysqli($host, $user, $password, $database);
             if ($db_connection->connect_error) {
                 die($db_connection->connect_error);
-            } else {
-                echo "Connection to database established<br><br>";
             }
 
             /* Query */
@@ -63,12 +61,13 @@
 
         public function update() {
             global $host, $user, $password, $database;
+            require_once "dbLogin.php";
             $db_connection = new mysqli($host, $user, $password, $database);
             if ($db_connection->connect_error) {
                 die($db_connection->connect_error);
             }
             /* Query */
-            $sqlQuery = "update dogmatcher.whatDogResults set dog='{$this->dog}', answer1='{$this->answer1}', answer2='{$this->answer2}', answer3='{$this->answer3}', answer4='{$this->answer4}', answer5='{$this->answer5}', answer6='{$this->answer6}', answer7='{$this->answer7}', answer8='{$this->answer8}', answer9='{$this->answer9}' where userId='{$this->id}'";
+            $sqlQuery = "update dogmatcher.whatDogResults set dog='{$this->dog}', answer1='{$this->answer1}', answer2='{$this->answer2}', answer3='{$this->answer3}', answer4='{$this->answer4}', answer5='{$this->answer5}', answer6='{$this->answer6}', answer7='{$this->answer7}', answer8='{$this->answer8}', answer9='{$this->answer9}' where userId='{$this->userId}'";
 
 
             /* Executing query */
@@ -79,5 +78,23 @@
 
             /* Closing connection */
             $db_connection->close();
+        }
+
+        public function inDB() {
+            global $host, $user, $password, $database;
+            require_once "dbLogin.php";
+            $db_connection = new mysqli($host, $user, $password, $database);
+            if ($db_connection->connect_error) {
+                die($db_connection->connect_error);
+            }
+            //grab user from session after login
+            $query = "SELECT * FROM dogmatcher.whatDogResults WHERE userId='{$this->userId}'";
+            /* Executing query */
+            $result = $db_connection->query($query);
+            if (!$result) {
+                return false;
+            } else {
+                return true;
+            }
         }
     }

@@ -58,29 +58,49 @@ $db_connection->close();
 </head>
 
 <body>
-<div class="column" style="text-align: center; background-color:#B8E0EA">
+	<ul>
+		<li><a class="active" href="quizPortal.html">Home</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+		<li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+		<li><a href="returnUser.php">View your quiz results</a></li>
+		<li><a href="data.php">View quiz data</a></li>
+	</ul>
+	<div class="column" style="text-align: center; background-color:#B8E0EA">
 
-    <!-- INSERT REAL LINK HERE-->
-    <form action="WhatDogAreYouQuiz.html" method="post">
+	    <!-- INSERT REAL LINK HERE-->
+	    <form action="WhatDogAreYouQuiz.html" method="post">
 
-        <img src="images/dogPersonality.jpg" alt="Perfect Match" class="center-block" width = "200" height = "300">
-        <br>
-        <h3 class="center-block"> You are a <?php echo $whatDog; ?>! Unhappy With Results? <h3>
-        <input type="submit" id="button" class="subbut2 center-block" value = "Click Here to find out what kind of dog you are" /><br>
-    </form>
+	        <img src="images/dogPersonality.jpg" alt="Perfect Match" class="center-block" width = "200" height = "300">
+	        <br>
+			<?php
+				if($whatDog == ""){
+					echo "<h3 class='center-block'> Quiz Not Completed <h3>";
+				} else {
+					echo "<h3 class='center-block'> You are a ".$whatDog."! Unhappy With Results? <h3>";
+				}
+			?>
+	        <input type="submit" id="button" class="subbut2 center-block" value = "Click Here to find out what kind of dog you are" /><br>
+	    </form>
 
-</div>
-<div class="column" style="text-align: center; background-color:#FFB15E">
+	</div>
+	<div class="column" style="text-align: center; background-color:#FFB15E">
 
-    <!-- INSERT REAL LINK HERE-->
-    <form action="dogMatchQuiz.html" method="post">
+	    <!-- INSERT REAL LINK HERE-->
+	    <form action="dogMatchQuiz.html" method="post">
 
 
-        <img src="images/mobileDog.jpg" alt="Perfect Match" class="center-block" width = "300" height = "220" >
-        <br>
-        <h3 class="center-block"> You are a <?php echo $dogMatch; ?>! Unhappy With Results? <h3>
-        <input type="submit" id="button2" class="subbut2 center-block" value = "Click Here to find out what kind of dog is best for you" /><br>
-    </form>
-</div>
+	        <img src="images/mobileDog.jpg" alt="Perfect Match" class="center-block" width = "300" height = "220" >
+	        <br>
+			<?php
+				if($dogMatch == ""){
+					echo "<h3 class='center-block'> Quiz Not Completed <h3>";
+				} else {
+					echo "<h3 class='center-block'> Your perfect match is a ".$dogMatch."! Unhappy With Results? <h3>";
+				}
+			?>
+	        <input type="submit" id="button2" class="subbut2 center-block" value = "Click Here to find out what kind of dog is best for you" /><br>
+	    </form>
+	</div>
 </body>
 </html>

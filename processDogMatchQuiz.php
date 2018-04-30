@@ -3,7 +3,7 @@ require("DogMatchResults.php");
 session_start();
 
 //grab user from session after login
-$userId = $_SESSION['user'];;
+$userId = $_SESSION['user'];
 
 //add logic for dog selection
 $dog = "";
@@ -127,6 +127,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 
@@ -161,6 +162,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A Beagle</h2>
@@ -194,6 +196,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A German Shepherd</h2>
@@ -226,6 +229,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A Siberian Husky</h2>
@@ -259,6 +263,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A Golden Retriever</h2>
@@ -292,6 +297,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A Collie</h2>
@@ -324,6 +330,7 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
         <li><a href="login.html">Login</a></li>
         <li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
         <li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+        <li><a href="returnUser.php">View your quiz results</a></li>
         <li><a href="data.php">View quiz data</a></li>
     </ul>
 <h2>You Should Get A Collie</h2>
@@ -341,6 +348,10 @@ if($corgi >= $beagle && $corgi >= $german_shep && $corgi >= $husky && $corgi >= 
 
 //If the user has not taken the quiz save the new quiz results
 $quiz = new DogMatchResults($userId, $dog, $_POST['1question'], $_POST['2question'], $_POST['3question'], $_POST['4question'], $_POST['5question'], $_POST['6question']);
-$quiz->save();
+if($quiz->inDB()) {
+    $quiz->update();
+} else {
+    $quiz->save();
+}
 
 ?>

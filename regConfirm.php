@@ -21,7 +21,20 @@
 		die("Insertion failed: " . $db_connection->error);
 	} else {
 		echo  "<h3>New User Registered</h3>";
+	}
+	$query = "select * from user where username = '{$username}' AND password = '{$password}'";
 
+	/* Executing query */
+	$result = $db_connection->query($query);
+	//
+	if (!$result) {
+		die("Insertion failed: " . $db_connection->error);
+		//echo "{$username} {$password}";
+	} else {
+		$row = $result->fetch_array(MYSQLI_ASSOC);
+		//echo $row['id'];
+		session_start();
+		$_SESSION["user"] = $row['id'];
 	}
 
 	/* Closing connection */

@@ -166,6 +166,14 @@ dogMatchPieChart.render();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+	<ul>
+		<li><a class="active" href="quizPortal.html">Home</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="whatDogAreYouQuiz.html">What dog are you?</a></li>
+		<li><a href="dogMatchQuiz.html">What dog is best for you?</a></li>
+		<li><a href="returnUser.php">View your quiz results</a></li>
+		<li><a href="data.php">View quiz data</a></li>
+	</ul>
 	<div style="padding:0 19px">
 		<h1>Quiz Result Breakdown</h1>
 		<br><br>
