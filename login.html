@@ -14,22 +14,28 @@
 
     </head>
 
-    <body style="padding:0 19px">
-		<form action="quizPortal.html" method="post">
-        	<h1>Dog Matcher</h1>
-			<img src="images/bransonDoggo.jpg" alt="Perfect Match" width = "350" height = "200">
+    <body>
+		<form action="logConfirm.php" method="post">
+        <h1>Dog Matcher</h1>
+		
+			<img src="bransonDoggo.jpg" alt="Perfect Match" width = "350" height = "200">
 			<hr>
 			<h3>Login</h3>
 		
 			<div class="form-group">
-				<strong>Email: </strong>
-				<input type="email" name="email" placeholder = "example@notreal.notreal" >
-				<br>
-				<strong>Password: </strong>
-				<input type="password" name="password" >
-				<br>
-				<input class="btn btn-default" type="submit" value="login"/>
-			</div>
+			<strong>Username: </strong>
+			<input type="text" name="username"  >
+			
+			<br>
+			
+			<strong>Password: </strong>
+			<input type="password" name="password" >
+			<br>
+			<input type="submit" />
+		</div>
+		</form>
+		<form action="register.php" method="post">
+			<input type="submit" value = "Make an Account" />
 		</form>
     </body>
 </html>
