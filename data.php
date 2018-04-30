@@ -166,8 +166,12 @@ dogMatchPieChart.render();
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div id="whatDogPieChartContainer" style="width: 45%; height: 300px;display: inline-block;"></div>
-	<div id="dogMatchPieChartContainer" style="width: 45%; height: 300px;display: inline-block;"></div>
+	<div style="padding:0 19px">
+		<h1>Quiz Result Breakdown</h1>
+		<br><br>
+		<div id="whatDogPieChartContainer" style="width: 45%; height: 300px;display: inline-block;"></div>
+		<div id="dogMatchPieChartContainer" style="width: 45%; height: 300px;display: inline-block;"></div>
+	</div>
 
 <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
