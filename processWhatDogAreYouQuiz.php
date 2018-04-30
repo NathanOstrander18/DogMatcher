@@ -1,8 +1,8 @@
 <?php
 require("WhatDogResults.php");
-
+session_start();
 //grab user from session after login
-$userId = 6;
+$userId = $_SESSION['user'];
 
 //add logic for dog selection
 $dog = "";

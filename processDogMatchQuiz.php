@@ -1,8 +1,9 @@
 <?php
 require("DogMatchResults.php");
+session_start();
 
 //grab user from session after login
-$userId = 10;
+$userId = $_SESSION['user'];;
 
 //add logic for dog selection
 $dog = "";
