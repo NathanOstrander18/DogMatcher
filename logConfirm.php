@@ -18,16 +18,22 @@
 	$result = $db_connection->query($query);
 	//
 	if (!$result) {
-		//echo "<h3>User Not Found. Try again.</h3>";
-		echo "{$username} {$password}";
+		echo "<h3>User Not Found. Try again.</h3>";
+		//echo "{$username} {$password}";
 	} else {
 		$row = $result->fetch_array(MYSQLI_ASSOC);
 		//echo $row['id'];
-		session_start();
+		if($row['passwprd'] != $password)
+		{
+			echo "<h3>User Not Found. Try again.</h3>";
+		}
+		else
+		{
+			session_start();
 		$_SESSION["user"] = $row['id'];
 		//echo $_SESSION["user"];
 		echo "<script>window.location.replace(\"quizportal.html\");</script>";
-	
+		}
 	}
 	
 	/* Closing connection */
