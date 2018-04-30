@@ -23,7 +23,7 @@
 	} else {
 		$row = $result->fetch_array(MYSQLI_ASSOC);
 		//echo $row['id'];
-		if($row['passwprd'] != $password)
+		if($row['password'] != $password)
 		{
 			echo "<h3>User Not Found. Try again.</h3>";
 		}
