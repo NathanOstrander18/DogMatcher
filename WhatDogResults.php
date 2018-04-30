@@ -94,7 +94,14 @@
             if (!$result) {
                 return false;
             } else {
-                return true;
+                $result->data_seek(0);
+                $row = $result->fetch_array(MYSQLI_ASSOC);
+                if($row) {
+                    return true;
+                } else {
+                    return false;
+                }
+
             }
         }
     }

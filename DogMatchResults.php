@@ -77,13 +77,19 @@
                 die($db_connection->connect_error);
             }
             //grab user from session after login
-            $query = "SELECT * FROM dogmatcher.whatDogResults WHERE userId='{$this->userId}'";
+            $query = "SELECT * FROM dogmatcher.dogMatchResults WHERE userId='{$this->userId}'";
             /* Executing query */
             $result = $db_connection->query($query);
             if (!$result) {
                 return false;
             } else {
-                return true;
+                $result->data_seek(0);
+                $row = $result->fetch_array(MYSQLI_ASSOC);
+                if($row) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
         }
 
