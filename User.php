@@ -20,7 +20,7 @@
 
         }
 
-        public function __save() {
+        public function save() {
             global $host, $user, $password, $database;
             require_once "dbLogin.php";
 
@@ -60,7 +60,7 @@
             return $result;
         }
 
-        public function __update() {
+        public function update() {
             global $host, $user, $password, $database;
             $db_connection = new mysqli($host, $user, $password, $database);
             if ($db_connection->connect_error) {
