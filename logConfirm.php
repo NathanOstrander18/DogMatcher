@@ -33,7 +33,7 @@
 			session_start();
 		$_SESSION["user"] = $row['id'];
 		//echo $_SESSION["user"];
-		echo "<script>window.location.replace(\"quizportal.html\");</script>";
+		echo "<script>window.location.replace(\"returnUser.html\");</script>";
 		}
 	}
 	
