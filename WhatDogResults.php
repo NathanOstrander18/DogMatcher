@@ -57,15 +57,15 @@
 			$stmt->bind_param("b", $null);
 			$stmt->send_long_data(0, file_get_contents($img));
             /* Executing query */
-            $result = $stmt->execute();
-           // if (!$result) {
-            //    die("Insertion failed: ");
-            //}
+            $stmt->execute();
+            if (!$result) {
+                die("Insertion failed: ");
+            }
 
             /* Closing connection */
             //$db_connection->close();
 
-           // return $result;
+            //return $result;
         }
 
         public function update() {
@@ -80,14 +80,16 @@
 			$img = $this->getImg();
             /* Query */
             //$sqlQuery = "update dogmatcher.whatDogResults set dog='{$this->dog}', answer1='{$this->answer1}', answer2='{$this->answer2}', answer3='{$this->answer3}', answer4='{$this->answer4}', answer5='{$this->answer5}', answer6='{$this->answer6}', answer7='{$this->answer7}', answer8='{$this->answer8}', answer9='{$this->answer9}' where userId='{$this->userId}'";
-			$stmt = $db_connection->prepare("update dogmatcher.dogMatchResults set dog='{$this->dog}', answer1='{$this->answer1}', answer2='{$this->answer2}', answer3='{$this->answer3}',
+			$stmt = $db_connection->prepare("update dogmatcher.whatDogResults set dog='{$this->dog}', answer1='{$this->answer1}', answer2='{$this->answer2}', answer3='{$this->answer3}',
 			answer4='{$this->answer4}', answer5='{$this->answer5}', 
 			answer6='{$this->answer6}',answer7='{$this->answer7}',answer8='{$this->answer8}',answer9='{$this->answer9}', img = ? where userId='{$this->userId}'");
-
+			$null = NULL;
+			$stmt->bind_param("b", $null);
+			$stmt->send_long_data(0, file_get_contents($img));
             /* Executing query */
-				$result = $stmt->execute();
+			$stmt->execute();
             //if (!$result) {
-            //    die("Inserting records failed. ");
+             //   die("Inserting records failed. ");
             //}
 
             /* Closing connection */
