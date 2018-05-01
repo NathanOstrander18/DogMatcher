@@ -98,7 +98,7 @@ $db_connection->close();
 	    <form action="dogMatchQuiz.html" method="post">
 
 
-	        <img src=<?php if ($whatDog == "") echo "images/mobileDog.jpg"; else {echo "data:image/jpeg;base64,".base64_encode($dogImg);} ?> alt="Perfect Match" class="center-block" width = "300" height = "220" >
+	        <img src=<?php if ($dogMatch == "") echo "images/mobileDog.jpg"; else {echo "data:image/jpeg;base64,".base64_encode($dogImg);} ?> alt="Perfect Match" class="center-block" width = "300" height = "220" >
 	        <br>
 			<?php
 				if($dogMatch == ""){
