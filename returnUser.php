@@ -23,9 +23,9 @@ if (!$result) {
     $row = $result->fetch_array(MYSQLI_ASSOC);
     $whatDog = $row['dog'];
 	$whatImg = $row['img'];
-	$myfile = fopen("wimg.jpg", "w") or die("Unable to open file!");
-	$txt = $whatImg;
-	fwrite($myfile, $txt);
+	// $myfile = fopen("wimg.jpg", "w") or die("Unable to open file!");
+	// $txt = $whatImg;
+	// fwrite($myfile, $txt);
 }
 
 $query = "SELECT * FROM dogmatcher.dogMatchResults WHERE userId='{$userId}'";
@@ -38,9 +38,9 @@ if (!$result) {
     $row = $result->fetch_array(MYSQLI_ASSOC);
     $dogMatch = $row['dog'];
 	$dogImg = $row['img'];
-	$myfile = fopen("dimg.jpg", "w") or die("Unable to open file!");
-	$txt = $dogImg;
-	fwrite($myfile, $txt);
+	// $myfile = fopen("dimg.jpg", "w") or die("Unable to open file!");
+	// $txt = $dogImg;
+	// fwrite($myfile, $txt);
 }
 
 
@@ -79,7 +79,7 @@ $db_connection->close();
 	    <!-- INSERT REAL LINK HERE-->
 	    <form action="WhatDogAreYouQuiz.html" method="post">
 
-	        <img src=<?php if ($whatDog == "") echo "images/dogPersonality.jpg"; else {echo "wimg.jpg";} ?> alt="Perfect Match" class="center-block" width = "200" height = "300">
+	        <img src=<?php if ($whatDog == "") echo "images/dogPersonality.jpg"; else {echo "data:image/jpeg;base64,".base64_encode($whatImg);} ?> alt="Perfect Match" class="center-block" width = "300" height = "220">
 	        <br>
 			<?php
 				if($whatDog == ""){
@@ -98,7 +98,7 @@ $db_connection->close();
 	    <form action="dogMatchQuiz.html" method="post">
 
 
-	        <img src=<?php if ($whatDog == "") echo "images/mobileDog.jpg"; else {echo "dimg.jpg";} ?> alt="Perfect Match" class="center-block" width = "300" height = "220" >
+	        <img src=<?php if ($whatDog == "") echo "images/mobileDog.jpg"; else {echo "data:image/jpeg;base64,".base64_encode($dogImg);} ?> alt="Perfect Match" class="center-block" width = "300" height = "220" >
 	        <br>
 			<?php
 				if($dogMatch == ""){
