@@ -124,7 +124,7 @@ $dataPoints2 = array(
 <script>
 window.onload = function () {
 
-let whatDogPieChart = new CanvasJS.Chart("whatDogPieChartContainer", {
+var whatDogPieChart = new CanvasJS.Chart("whatDogPieChartContainer", {
 	animationEnabled: true,
 	backgroundColor: "antiquewhite",
 	// exportEnabled: true,
@@ -140,7 +140,7 @@ let whatDogPieChart = new CanvasJS.Chart("whatDogPieChartContainer", {
 });
 whatDogPieChart.render();
 
-let dogMatchPieChart = new CanvasJS.Chart("dogMatchPieChartContainer", {
+var dogMatchPieChart = new CanvasJS.Chart("dogMatchPieChartContainer", {
 	animationEnabled: true,
 	backgroundColor: "antiquewhite",
 	// exportEnabled: true,
