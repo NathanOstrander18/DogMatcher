@@ -58,14 +58,14 @@
 			$stmt->send_long_data(0, file_get_contents($img));
             /* Executing query */
             $result = $stmt->execute();
-            if (!$result) {
-                die("Insertion failed: ");
-            }
+           // if (!$result) {
+            //    die("Insertion failed: ");
+            //}
 
             /* Closing connection */
             //$db_connection->close();
 
-            return $result;
+           // return $result;
         }
 
         public function update() {
@@ -86,9 +86,9 @@
 
             /* Executing query */
 				$result = $stmt->execute();
-            if (!$result) {
-                die("Inserting records failed. ");
-            }
+            //if (!$result) {
+            //    die("Inserting records failed. ");
+            //}
 
             /* Closing connection */
            // $db_connection->close();

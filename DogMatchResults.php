@@ -51,7 +51,7 @@
             /* Closing connection */
             //$db_connection->close();
 
-            return $result;
+           // return $result;
         }
 
         public function update() {
